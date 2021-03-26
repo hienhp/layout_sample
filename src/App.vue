@@ -1,18 +1,22 @@
 <template>
   <div id='app'>
-    <component :is='layout'>
-      <router-view :layout.sync='layout' />
+    <component :is="$route.meta.layout || 'div'">
+      <template v-for='slot in $route.meta.slots' v-slot:[slot.name]>
+        <component :is='slot.component' :key='slot.name'></component>
+      </template>
+      <!--      <router-view :layout.sync='layout' />-->
+      <router-view />
     </component>
   </div>
 </template>
 <script>
 export default {
-  name: 'App',
-  data() {
-    return {
-      layout: 'div'
-    }
-  }
+  name: 'App'
+  // data() {
+  //   return {
+  //     layout: 'div'
+  //   }
+  // }
 }
 </script>
 <style>

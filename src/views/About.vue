@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import LayoutB from '@/layouts/LayoutB.vue'
+// import LayoutB from '@/layouts/LayoutB.vue'
 
 export default {
   name: 'About',
@@ -19,7 +19,7 @@ export default {
     }
   },
   created() {
-    this.$emit('update:layout', LayoutB)
+    // this.$emit('update:layout', LayoutB)
 
     setTimeout(() => {
       this.msg = 'hello from about'
