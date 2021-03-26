@@ -1,7 +1,7 @@
 <template>
-  <LayoutB>
+<!--  <LayoutB>-->
     <h1>Hello from contact</h1>
-  </LayoutB>
+  <!--  </LayoutB>-->
 </template>
 
 <script>
@@ -9,9 +9,9 @@ import LayoutB from '@/layouts/LayoutB.vue'
 
 export default {
   name: 'Contact',
-  components: { LayoutB },
+  // components: { LayoutB },
   created() {
-    console.log('abc')
+    this.$emit('update:layout', LayoutB)
   }
 }
 </script>

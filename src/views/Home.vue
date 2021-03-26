@@ -1,11 +1,11 @@
 <template>
-  <LayoutA>
+<!--  <LayoutA>-->
     <div class='home'>
       <router-link to='/about'>About</router-link>
       <img alt='Vue logo' src='../assets/logo.png' />
       <HelloWorld msg='Welcome to Your Vue.js App' />
     </div>
-  </LayoutA>
+  <!--  </LayoutA>-->
 </template>
 
 <script>
@@ -16,8 +16,11 @@ import LayoutA from '@/layouts/LayoutA'
 export default {
   name: 'Home',
   components: {
-    LayoutA,
+    // LayoutA,
     HelloWorld
+  },
+  created() {
+    this.$emit('update:layout', LayoutA)
   }
 }
 </script>
