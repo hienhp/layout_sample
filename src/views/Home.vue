@@ -11,7 +11,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import LayoutA from '@/layouts/LayoutA'
+// import LayoutA from '@/layouts/LayoutA'
 
 export default {
   name: 'Home',
@@ -20,7 +20,7 @@ export default {
     HelloWorld
   },
   created() {
-    this.$emit('update:layout', LayoutA)
+    // this.$emit('update:layout', LayoutA)
   }
 }
 </script>

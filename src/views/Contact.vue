@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import LayoutB from '@/layouts/LayoutB.vue'
+// import LayoutB from '@/layouts/LayoutB.vue'
 
 export default {
   name: 'Contact',
   // components: { LayoutB },
   created() {
-    this.$emit('update:layout', LayoutB)
+    // this.$emit('update:layout', LayoutB)
   }
 }
 </script>
