@@ -8,7 +8,7 @@
     </aside>
     <main>
       Layout B
-      <slot></slot>
+      <router-view></router-view>
     </main>
     <footer>
       <slot name='footer'>This is footer</slot>
